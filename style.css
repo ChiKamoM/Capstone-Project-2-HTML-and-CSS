@@ -1,0 +1,46 @@
+*{
+      font-family: "Be Vietnam Pro";
+}
+
+header{
+      display: flex;
+      justify-content: center;
+}
+header .logo{
+      margin-top: 53px;
+}
+.hero{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.figures, .hero h2, p{
+      width: 256px;
+}
+.figures{
+      margin-top: 48px;
+      margin-bottom: 0;
+}
+h2, h3{
+      color:hsl(228, 39%, 23%);
+}
+.hero h2, .hero p{
+      text-align: center;
+}
+.hero h2{
+      font-size: 32px;
+      margin-top: 10px;
+      font-weight: 700;
+}
+p{
+      color: hsl(227, 12%, 61%);
+}
+.getStarted{
+      color: white;
+      background-color: hsl(12, 88%, 59%);
+      border-style: none;
+      width: 140px;
+      height: 45px;
+      border-radius: 50px;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
