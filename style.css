@@ -1,5 +1,12 @@
 *{
       font-family: "Be Vietnam Pro";
+      box-sizing: border-box;
+}
+body{
+      margin: 0;
+      padding: 0;
+      width: 320px;
+      overflow-x: hidden;
 }
 
 header{
@@ -14,26 +21,28 @@ header .logo{
       flex-direction: column;
       align-items: center;
 }
-.figures, .hero h2, p{
+.figures, .hero h1, p{
       width: 256px;
 }
 .figures{
       margin-top: 48px;
       margin-bottom: 0;
 }
-h2, h3{
+h2, h3, h1{
       color:hsl(228, 39%, 23%);
 }
-.hero h2, .hero p{
+h1, .hero p{
       text-align: center;
 }
-.hero h2{
-      font-size: 32px;
+h1{
+      font-size: 31px;
       margin-top: 10px;
       font-weight: 700;
 }
 p{
       color: hsl(227, 12%, 61%);
+      line-height: 1.6;
+      font-size: 16px;
 }
 .getStarted{
       color: white;
@@ -43,4 +52,115 @@ p{
       height: 45px;
       border-radius: 50px;
       box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+      margin-top: 5px;
+      transition: 90ms linear ;
+      font-weight: 700;
 }
+
+.getStarted:hover{
+      cursor: pointer;
+      background-color: hsl(12, 82%, 67%);
+      transform:translateY(-6px);
+}
+
+/*----------main--------------*/
+
+.main{
+      margin-top: 70px;
+      display: ;
+      flex-direction: column;
+      align-items: center;
+}
+.whatDifferent{
+      width: 256px;
+      height: 256px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin:auto;
+}
+.whatDifferent>p{
+      text-align: center;
+      width: 100%;
+      padding:0;
+      margin:0;
+}
+h2{
+      font-size: 31px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 80px;
+      width: 100%;
+}
+.specs {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+.specs p{
+      padding: 0;
+      margin: 0;
+      width: 304px;
+}
+.specs h3{
+      font-size: 12px;
+}
+.specsHeading{
+      width: 304px;
+      height: 40px;  
+      background-color: hsl(0, 19%, 85%);
+}
+.specsHeading h3{
+      display: inline-block;
+}
+.number{
+      background-color: hsl(12, 88%, 59%);
+      color: white;
+      border-radius: 20px;
+      display: inline-block;
+      width: 60px;
+      height:40px;
+      text-align: center;
+}
+
+/*----------testimonials--------------*/
+.testimonial{
+      width: 320px;
+}
+.testimonialScroll::-webkit-scrollbar{
+      display: none;
+}
+.testimonialScroll{
+      overflow-x: scroll;
+}
+.testimonialGrid{
+      width: 960px;
+      display: grid;
+      grid-template-columns: 230px 230px 230px 230px;
+}
+.gridItem p{
+      text-align: center;
+      font-size: 16px;
+      width: 140px;
+      height: auto;
+}
+.gridItem{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+}
+.center{
+      margin-left: 100px;
+}
+.useManage{
+      background-color: hsl(12, 88%, 59%);
+}
+.btnWhite{
+      background-color: white;
+      color:hsl(12, 88%, 59%);
+}
+.btnWhite:hover
