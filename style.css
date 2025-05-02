@@ -48,8 +48,7 @@ p{
       color: white;
       background-color: hsl(12, 88%, 59%);
       border-style: none;
-      width: 140px;
-      height: 45px;
+      padding: 13px 32px;
       border-radius: 50px;
       box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
       margin-top: 5px;
@@ -103,26 +102,28 @@ h2{
 .specs p{
       padding: 0;
       margin: 0;
-      width: 304px;
+      width: 100%;
 }
 .specs h3{
       font-size: 12px;
 }
 .specsHeading{
       width: 100%;
-      height: 40px;  
+      height: 36px;  
       background-color: hsl(0, 19%, 85%);
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
 }
 .specsHeading h3{
       display: inline-block;
+      margin-left: 9px;
 }
 .number{
       background-color: hsl(12, 88%, 59%);
+      padding: 8px 24px;
       color: white;
-      border-radius: 20px;
+      border-radius: 30px;
       display: inline-block;
-      width: 60px;
-      height:40px;
       text-align: center;
 }
 
@@ -154,18 +155,26 @@ h2{
       width: 200px;
 }
 .center{
-      margin-left: 100px;
+      width: fit-content;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 60px;
 }
+/*----------Use manage--------------*/
 .useManage{
       background-color: hsl(12, 88%, 59%);
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       padding: 100px 0px;
 }
 .useManage h2{
       color: white;
-      min-width: 354px;
-      font-weight: 500;
+      text-align: center;
+      min-width: 100%;
+      height: fit-content;
+      font-weight: 700;
+      margin-bottom: 40px;
 }
 .btnWhite{
       background-color: white;
@@ -173,5 +182,73 @@ h2{
       margin: auto;
 }
 .btnWhite:hover{
-      background-color: hsl(13, 100%, 96%);
+      background-color: hsl(12, 100%, 96%);
+}
+/*----------Footer--------------*/
+ footer{
+      background-color: hsl(233, 12%, 13%);
+      height: fit-content;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+}
+.socials{
+      width: 163px;
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+}
+
+footer p{
+      text-align: center;
+      color: hsl(0, 0%, 98%);
+}
+.nav{
+      text-align: center;
+      color: hsl(0, 0%, 98%);
+      margin-bottom: 40px;
+}
+a {
+      color: hsl(0, 0%, 98%);
+      text-decoration: none;
+}
+ul{
+      list-style: none;
+      color: hsl(227, 12%, 61%);
+      line-height: 1.6;
+      font-size: 16px;
+      padding: 0;
+}
+li{
+      margin-bottom: 20px;
+}
+a:hover{
+      color:hsl(12, 88%, 59%);
+}
+form input{
+      border-style: none;
+      height: 40px;
+      border-radius: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+}
+.email:focus{
+      outline:none;
+      border: none;
+}
+.go{
+      color: white;
+      background-color: hsl(12, 88%, 59%);
+      border-style: none;
+}
+.admin{
+      margin-bottom: 40px;
+}
+.copyright{
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 40px;
+      margin-bottom: 0;
 }

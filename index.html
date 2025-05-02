@@ -5,8 +5,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Manage</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link
+      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -73,29 +76,33 @@
                         </div>
                   </div>
             </div>
-            <button class="getStarted center">Get Started</button>
+            <div class="center">
+                  <button class="getStarted">Get Started</button>
+            </div>
       </section>
       
       <section class="last">
             <div class="useManage">
-                  <h2>Simplify how your team works today.</h2>
+                  <h2>Simplify how your team <br> works today.</h2>
                   <button class="getStarted btnWhite">Get Started</button>
             </div>
       </section>
       <footer>
-            <img src="./assets/footer-logo.svg" alt="manage logo" class="logo">
+            <img src="./assets/footer-logo.svg" alt="manage logo" class="logoFooter">
             <div class="socials">
-                  <img src="./assets/icon-facebook.svg" alt="facebook logo" class="social">
-                  <img src="./assets/icon-youtube.svg" alt="youtube logo" class="social">
-                  <img src="./assets/icon-twitter.svg" alt="twitter logo" class="social">
-                  <img src="./assets/icon-pinterest.svg" alt="pinterest" class="social">
-                  <img src="./assets/icon-instagram.svg" alt="instagram logo" class="social">
+                  <a href=""><img src="./assets/icon-facebook.svg" class="social" alt="facebook logo"></a>
+                  <a href=""><img src="./assets/icon-youtube.svg" alt="youtube logo" class="social"></a>
+                  <a href=""><img src="./assets/icon-twitter.svg" alt="twitter logo" class="social"></a>
+                  <a href=""><img src="./assets/icon-pinterest.svg" alt="pinterest" class="social"></a>
+                  <a href=""><img src="./assets/icon-instagram.svg" alt="instagram logo" class="social"></a>
             </div>
             <div class="nav">
-                  <p>Home</p>
-                  <p>Pricing</p>
-                  <p>Products</p>
-                  <p>About Us</p>
+                  <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                  </ul>
             </div>
             <div class="admin">
                   <p>Careers</p>
@@ -103,10 +110,10 @@
                   <p>Privacy Policy</p>
             </div>
             <form action="">
-                  <input type="email" placeholder="Updates in your inbox…" required>
-                  <input type="submit" value="Go" >
+                  <input type="email" placeholder="Updates in your inbox…" required class="email">
+                  <input type="submit" value="Go" class="go" >
             </form>
-            <p>Copyright 2020. All Rights Reserved</p>
+            <p class="copyright">Copyright 2020. All Rights Reserved</p>
       </footer>
 </body>
 </html>
