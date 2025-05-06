@@ -1,5 +1,5 @@
 *{
-      font-family: "Be Vietnam Pro";
+      font-family: "Be Vietnam Pro", "Segoe UI";
       box-sizing: border-box;
 }
 body{
@@ -8,7 +8,12 @@ body{
       width: 100vw;
       overflow-x: hidden;
 }
-
+section{
+      margin:50px 0;
+}
+header *:not(.logo){
+      display: none;
+}
 header{
       display: flex;
       justify-content: center;
@@ -16,13 +21,26 @@ header{
 header .logo{
       margin-top: 53px;
 }
+/*----------hero--------------*/
 .hero{
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 0 10vw;
+      height: fit-content;
 }
-.figures, .hero h1, p{
-      width: 256px;
+.heroText{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10vw;
+      height: fit-content;
+}
+.figures{
+      width: 100%;
+}
+.hero h1, p{
+      width: 100%;
 }
 .figures{
       margin-top: 48px;
@@ -31,12 +49,14 @@ header .logo{
 h2, h3, h1{
       color:hsl(228, 39%, 23%);
 }
-h1, .hero p{
+.hero p{
       text-align: center;
 }
 h1{
-      font-size: 31px;
+      font-size: 30px;
       margin-top: 10px;
+      text-align: center;
+      width: 100%;
       font-weight: 700;
 }
 p{
@@ -65,23 +85,25 @@ p{
 /*----------main--------------*/
 
 .main{
-      margin-top: 70px;
-      margin-bottom: 30px;
+      width: 100%;
+
 }
 .whatDifferent{
-      width: 256px;
-      height: 256px;
+      width: 100%;
+      height: fit-content;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       margin:auto;
+      padding-left: 10vw;
+      padding-right: 10vw;
 }
 .whatDifferent>p{
       text-align: center;
       width: 100%;
       padding:0;
-      margin:0;
+      margin:50px;
 }
 h2{
       font-size: 31px;
@@ -139,32 +161,46 @@ h2{
 .testimonialGrid{
       width: 960px;
       display: grid;
-      grid-template-columns: 230px 230px 230px 230px;
+      grid-template-columns: 190px 190px 190px 190px;
+      justify-items: center;
 }
 .gridItem p{
       text-align: center;
       font-size: 16px;
-      width: 140px;
+      width: 107px;
       height: auto;
+}
+.gridItem h3{
+      font-size: 16px;
+      text-align: center;
+}
+.gridItem img{
+      height: 64px;
 }
 .gridItem{
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 200px;
+      width: 137px;
+      margin: 24px;
+      padding: 20px;
+      background-color: white;
 }
 .center{
       width: fit-content;
       margin: auto;
       margin-top: 40px;
-      margin-bottom: 60px;
 }
 /*----------Use manage--------------*/
 .useManage{
-      background-color: hsl(12, 88%, 59%);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
+}
+.last{
+      margin-bottom: 0px;      
+      background-color: hsl(12, 88%, 59%);
       padding: 100px 0px;
 }
 .useManage h2{
@@ -209,21 +245,21 @@ footer p{
       color: hsl(0, 0%, 98%);
       margin-bottom: 40px;
 }
-a {
+footer a {
       color: hsl(0, 0%, 98%);
       text-decoration: none;
 }
-ul{
+footer ul{
       list-style: none;
       color: hsl(227, 12%, 61%);
       line-height: 1.6;
       font-size: 16px;
       padding: 0;
 }
-li{
+footer li{
       margin-bottom: 20px;
 }
-a:hover{
+footer a:hover{
       color:hsl(12, 88%, 59%);
 }
 form input{
@@ -250,4 +286,208 @@ form input{
       font-weight: 300;
       margin-top: 40px;
       margin-bottom: 0;
+}
+
+/*-------------------------TABLET SIZE-----------------------------*/
+
+@media (min-width:768px) {
+      
+ /*----------main--------------*/     
+      header *:not(.logo){
+            display: unset;
+      }
+      header{
+            display: flex;
+            width: fit-content;
+            padding-top: 50px;
+            justify-content:flex-start;
+            align-items: flex-end;
+            height: max-content;
+            margin: auto;
+      }
+      header .logo{
+            margin-top: 0;
+      }
+      header a {
+            text-decoration: none;
+            color: hsl(228, 39%, 23%);
+      }
+      header a:hover{
+            color: hsl(227, 12%, 61%);
+      }
+      nav{
+            margin-bottom: 8px;
+            margin-left: 4px;
+            margin-right: 4px; 
+      }
+      header ul{
+            list-style: none;
+            font-size: 14px;
+            height: 24px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+      }
+      header li{
+            margin-right: 24px;
+      }
+      header li:last-of-type{
+            margin-right: 0;
+      }
+
+/*----------hero--------------*/
+      .hero{
+      display: flex;
+      flex-direction: row;
+      padding: 50px 0;
+      margin:0 24px;
+      }
+      .figures{
+      margin:0;
+      width: 50%;
+      order: 2;
+      }
+      .heroText{
+            display: unset;
+            width: 50%;
+            padding: 0;
+            order: 1;
+      }
+      .hero p{
+            text-align: left;
+      }
+      .heroText h1{
+            text-align: left;
+      }
+
+
+      /*----------main--------------*/
+
+      .main{
+      width: 100%;
+      padding:50px 0;
+      margin:0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+
+      }
+      .whatDifferent{
+            width: 360px;
+            display: usent;
+            margin:0;
+            padding-left: 0;
+            padding-right: 0;
+            grid-area: 2/1/3/2;
+      }
+      .whatDifferent>p{
+            text-align: left;
+            margin:0;            
+      }
+      .whatDifferent h2{
+            font-size: 31px;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            width: 100%;
+      }
+      .specs {
+            width: 360px;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 30px;
+            padding-left: 20px;
+      }
+      .specs p{
+            padding-left: 80px;
+            margin: 0;
+            width: 100%;
+      }
+      .specs h3{
+            font-size: 12px;
+      }     
+      .specsHeading{
+            width: 100%;
+            height: 36px;  
+            background-color: white;
+      }
+      .specsHeading h3{
+            display: inline-block;
+            margin-left: 9px;
+      }
+      .number{
+            background-color: hsl(12, 88%, 59%);
+            padding: 8px 24px;
+            color: white;
+            border-radius: 30px;
+            display: inline-block;
+            text-align: center;
+      }
+      .first{
+            grid-area: 1/2/2/3;
+      }
+      .second{
+            grid-area: 2/2/3/3;
+      }
+      .third{
+            grid-area: 3/2/4/2;
+      }
+/*----------Use manage--------------*/
+      .last{    
+            background-color: hsl(12, 88%, 59%);
+            padding: 50px 0px;
+            margin: 0 0;
+      }
+      .useManage h2{
+            color: white;
+            text-align: left;
+            height: fit-content;
+            font-weight: 700;
+      }
+      .btnWhite:hover{
+            background-color: hsl(12, 100%, 96%);
+      }
+      .useManage{
+            display: block;
+      }
+/*----------Footer--------------*/
+      footer{
+            padding: 50px 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 178.2px;
+      }
+      .go{
+            width: 100%;
+      }
+      footer>div{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+      }
+      .socials{
+            margin: 0;
+      }
+      .copyright{
+            margin:0;
+      }
+      .col2{
+            margin:0;
+      }
+      ul{
+            text-align: left;
+            margin:0;
+      }
+      .admin{
+            margin:0;
+            display: block;
+      }
+      .admin p{
+            text-align: left;
+            margin:0;
+      } 
+           
 }

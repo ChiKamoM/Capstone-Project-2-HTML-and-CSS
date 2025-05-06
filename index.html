@@ -7,27 +7,38 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link
-      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
       <link rel="stylesheet" href="style.css">
 </head>
 <body>
       <header>
             <img src="./assets/logo.svg" alt="logo" class="logo" >
+            <nav>
+                  <ul>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Community</a></li>
+                  </ul>
+            </nav>
+            <button class="getStarted">Get Started</button>
       </header>
       <section class="hero">
             <img src="./assets/illustration-intro.svg" alt="figures" class="figures">
-            <h1>Bring everyone together to build better products.</hq  >
-            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-            <button class="getStarted">Get Started</button>
+            <div class="heroText">
+                  <h1>Bring everyone together to build better products.</h1>
+                  <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                  <button class="getStarted">Get Started</button>
+            </div>            
+            
       </section>      
       <section class="main">
             <div class="whatDifferent">
                   <h2>What’s different about Manage?</h2>
             <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
             </div>
-            <div class="specs">
+            <div class="specs first">
                   <div class="specsHeading">
                         <span class="number">01</span>
                         <h3>Track company-wide progress</h3>
@@ -35,14 +46,14 @@
                   <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
                   
             </div>
-            <div class="specs">
+            <div class="specs second">
                   <div class="specsHeading">
                         <span class="number">02</span>
                         <h3>Advanced built-in reports</h3>
                   </div>
                   <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
             </div>
-            <div class="specs">
+            <div class="specs third">
                   <div class="specsHeading">
                         <span class="number">03</span>
                         <h3>Everything you need in one place</h3>
@@ -88,15 +99,17 @@
             </div>
       </section>
       <footer>
-            <img src="./assets/footer-logo.svg" alt="manage logo" class="logoFooter">
-            <div class="socials">
-                  <a href=""><img src="./assets/icon-facebook.svg" class="social" alt="facebook logo"></a>
-                  <a href=""><img src="./assets/icon-youtube.svg" alt="youtube logo" class="social"></a>
-                  <a href=""><img src="./assets/icon-twitter.svg" alt="twitter logo" class="social"></a>
-                  <a href=""><img src="./assets/icon-pinterest.svg" alt="pinterest" class="social"></a>
-                  <a href=""><img src="./assets/icon-instagram.svg" alt="instagram logo" class="social"></a>
+            <div class="col 1">
+                  <img src="./assets/footer-logo.svg" alt="manage logo" class="logoFooter">
+                  <div class="socials">
+                        <a href=""><img src="./assets/icon-facebook.svg" class="social" alt="facebook logo"></a>
+                        <a href=""><img src="./assets/icon-youtube.svg" alt="youtube logo" class="social"></a>
+                        <a href=""><img src="./assets/icon-twitter.svg" alt="twitter logo" class="social"></a>
+                        <a href=""><img src="./assets/icon-pinterest.svg" alt="pinterest" class="social"></a>
+                        <a href=""><img src="./assets/icon-instagram.svg" alt="instagram logo" class="social"></a>
+                  </div>
             </div>
-            <div class="nav">
+            <div class="nav col2">
                   <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Pricing</a></li>
@@ -104,16 +117,18 @@
                         <li><a href="">About Us</a></li>
                   </ul>
             </div>
-            <div class="admin">
+            <div class="admin col3">
                   <p>Careers</p>
                   <p>Community</p>
                   <p>Privacy Policy</p>
             </div>
-            <form action="">
-                  <input type="email" placeholder="Updates in your inbox…" required class="email">
-                  <input type="submit" value="Go" class="go" >
-            </form>
-            <p class="copyright">Copyright 2020. All Rights Reserved</p>
+            <div class="col4">
+                  <form action="">
+                        <input type="email" placeholder="Updates in your inbox…" required class="email">
+                        <input type="submit" value="Go" class="go" >
+                  </form>
+                  <p class="copyright">Copyright 2020. All Rights Reserved</p>
+            </div>
       </footer>
 </body>
 </html>
