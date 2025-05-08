@@ -7,6 +7,9 @@ body{
       padding: 0;
       width: 100vw;
       overflow-x: hidden;
+      background-image:url(./assets/bg-tablet-pattern.svg);
+      background-repeat: no-repeat;
+      background-position: -10% -5%;      
 }
 section{
       margin:50px 0;
@@ -27,13 +30,13 @@ header .logo{
       flex-direction: column;
       align-items: center;
       padding: 0 10vw;
+      margin-top: 0;
       height: fit-content;
 }
 .heroText{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0 10vw;
       height: fit-content;
 }
 .figures{
@@ -43,7 +46,7 @@ header .logo{
       width: 100%;
 }
 .figures{
-      margin-top: 48px;
+      padding-top: 50px;
       margin-bottom: 0;
 }
 h2, h3, h1{
@@ -58,6 +61,7 @@ h1{
       text-align: center;
       width: 100%;
       font-weight: 700;
+      padding: 0 5px;
 }
 p{
       color: hsl(227, 12%, 61%);
@@ -86,6 +90,7 @@ p{
 
 .main{
       width: 100%;
+      padding-top: 50px;
 
 }
 .whatDifferent{
@@ -108,8 +113,7 @@ p{
 h2{
       font-size: 31px;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      margin:0;
       height: 80px;
       width: 100%;
 }
@@ -122,7 +126,7 @@ h2{
 }
 .specs p{
       padding: 0;
-      margin: 0;
+      margin: 10px;
       width: 100%;
 }
 .specs h3{
@@ -159,7 +163,6 @@ h2{
       overflow-x: scroll;
 }
 .testimonialGrid{
-      width: 960px;
       display: grid;
       grid-template-columns: 190px 190px 190px 190px;
       justify-items: center;
@@ -201,13 +204,16 @@ h2{
 .last{
       margin-bottom: 0px;      
       background-color: hsl(12, 88%, 59%);
+      background-image: url(./assets/bg-simplify-section-mobile.svg);
+      background-repeat: no-repeat;
       padding: 100px 0px;
 }
-.useManage h2{
+.useManage h3{
       color: white;
       text-align: center;
       min-width: 100%;
       height: fit-content;
+      font-size: 32px;
       font-weight: 700;
       margin-bottom: 40px;
 }
@@ -288,29 +294,33 @@ form input{
       margin-bottom: 0;
 }
 
-/*-------------------------TABLET SIZE-----------------------------*/
+/*-------------------------------------------------TABLET SIZE--------------------------------------------------------*/
 
 @media (min-width:768px) {
-      
+      body{
+            background-image:url(./assets/bg-tablet-pattern.svg), url(./assets/bg-tablet-pattern.svg);
+            background-repeat: no-repeat;
+            background-position: top -270px left 365px, bottom 920px right 450px;
+      }
  /*----------main--------------*/     
       header *:not(.logo){
             display: unset;
       }
       header{
             display: flex;
-            width: fit-content;
             padding-top: 50px;
             justify-content:flex-start;
             align-items: flex-end;
             height: max-content;
             margin: auto;
+            width: fit-content;
       }
       header .logo{
             margin-top: 0;
       }
       header a {
             text-decoration: none;
-            color: hsl(228, 39%, 23%);
+            color: hsl(233, 12%, 13%);
       }
       header a:hover{
             color: hsl(227, 12%, 61%);
@@ -340,17 +350,18 @@ form input{
       .hero{
       display: flex;
       flex-direction: row;
+      justify-content: center;
       padding: 50px 0;
       margin:0 24px;
       }
       .figures{
       margin:0;
-      width: 50%;
+      width: 360px;
       order: 2;
       }
       .heroText{
             display: unset;
-            width: 50%;
+            width: 360px;
             padding: 0;
             order: 1;
       }
@@ -359,15 +370,16 @@ form input{
       }
       .heroText h1{
             text-align: left;
+            width: 80%;
       }
 
 
       /*----------main--------------*/
 
       .main{
-      width: 100%;
+      width: 760px;
       padding:50px 0;
-      margin:0;
+      margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -377,36 +389,34 @@ form input{
             width: 360px;
             display: usent;
             margin:0;
+            margin-left:20px;
             padding-left: 0;
             padding-right: 0;
             grid-area: 2/1/3/2;
       }
-      .whatDifferent>p{
+      .whatDifferent p{
             text-align: left;
-            margin:0;            
+            margin:0;           
       }
       .whatDifferent h2{
             font-size: 31px;
             text-align: left;
             margin: 0;
+            margin-bottom: 10px;
             padding: 0;
             height: 80px;
-            width: 100%;
       }
       .specs {
-            width: 360px;
             padding: 0;
             margin: 0;
             margin-bottom: 30px;
-            padding-left: 20px;
       }
       .specs p{
             padding-left: 80px;
-            margin: 0;
-            width: 100%;
+            margin-top: 10px;
       }
       .specs h3{
-            font-size: 12px;
+            font-size: 16px;
       }     
       .specsHeading{
             width: 100%;
@@ -433,24 +443,70 @@ form input{
       }
       .third{
             grid-area: 3/2/4/2;
+            width: 100%;
       }
+      /*----------testimonials--------------*/
+.testimonial{
+      width: 100%;
+}
+.testimonialGrid{
+      margin: auto;
+      width: fit-content;
+      display: grid;
+      grid-template-columns: 190px 190px 190px 190px;
+      justify-items: center;
+}
+.gridItem p{
+      text-align: center;
+      font-size: 16px;
+      width: 107px;
+}
+.gridItem h3{
+      font-size: 16px;
+      text-align: center;
+}
+.gridItem img{
+      height: 64px;
+}
+.gridItem{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 137px;
+      margin: 24px;
+      padding: 20px;
+      background-color: white;
+}
 /*----------Use manage--------------*/
       .last{    
             background-color: hsl(12, 88%, 59%);
             padding: 50px 0px;
             margin: 0 0;
+            background-image: url(./assets/bg-simplify-section-desktop.svg);
+            background-position:bottom 3px left 220px;
       }
-      .useManage h2{
+      
+      .useManage h3{
             color: white;
             text-align: left;
-            height: fit-content;
+            font-size: 40px;
             font-weight: 700;
+            margin:0 0 0 0;
       }
-      .btnWhite:hover{
-            background-color: hsl(12, 100%, 96%);
+      br{
+            margin-right: -20;
+            padding: 0;
       }
       .useManage{
-            display: block;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin:0 ;
+            margin-right: 200px;
+      }
+      .btnWhite{
+            background-color: white;
+            color:hsl(12, 88%, 59%);
       }
 /*----------Footer--------------*/
       footer{
@@ -460,13 +516,16 @@ form input{
             grid-template-rows: 178.2px;
       }
       .go{
-            width: 100%;
+            width: 80%;
       }
       footer>div{
             display: flex;
             height: 100%;
             flex-direction: column;
             justify-content: space-between;
+      }
+      input{
+            width: 80%;
       }
       .socials{
             margin: 0;
@@ -491,3 +550,73 @@ form input{
       } 
            
 }
+
+/*-------------------------------------------------LAPTOP SIZE--------------------------------------------------------*/
+
+@media (min-width:992px) {
+      body{
+            background-position: top -270px left 365px, bottom 870px right 30px;
+      }
+      /*----------header--------------*/
+      header{
+            display: flex;
+            justify-content:space-between;
+            align-items: flex-end;
+            margin: auto;
+            width: 960px;
+      }
+/*----------hero--------------*/
+      .heroText{
+            width: 480px;
+      }
+      .heroText p{
+            padding-right: 192px;
+      }
+      .figures{
+            width: 480px;
+      }
+      .hero h1{
+            font-size: 56px;
+            width: 480px;
+      }
+      .hero{
+            padding: 100px 0;
+      }
+      /*----------main--------------*/
+      .main{
+            width: 960px;
+            padding: 0;
+            padding-top: 50px;
+      }
+      .whatDifferent{
+            grid-area: 1/1/2/2;
+      }
+      /*----------testimonials--------------*/
+      .testimonialGrid{
+            margin: auto;
+            width:fit-content;
+            grid-template-columns: 200px 200px 200px 200px;
+      }
+      .gridItem{
+            padding: 24px;
+            margin: 0;
+            width: 100%;
+      }
+      .gridItem p{
+            width: 100%;
+      }
+      /*----------Footer--------------*/
+      .go{
+            width:fit-content;
+      }
+      input{
+            width: 150px;
+      }
+      .logoFooter{
+            width: 130.5px;
+      }
+      .figures{
+            padding-top: 0;
+      }
+      
+}     
