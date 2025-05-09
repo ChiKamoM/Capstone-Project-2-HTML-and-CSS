@@ -515,6 +515,9 @@ form input{
             color:hsl(12, 88%, 59%);
       }
 /*----------Footer--------------*/
+      footer{
+            padding: 0;
+      }
       .footer{
             padding: 50px 24px;
             display: grid;
@@ -561,7 +564,7 @@ form input{
 
 @media (min-width:992px) {
       body{
-            background-position: bottom 110% right -170%, bottom 870px right 30px;
+            background-position: bottom 110% right -165%, bottom 820px right 530px;
       }
       /*----------header--------------*/
       header{
@@ -598,19 +601,29 @@ form input{
       .whatDifferent{
             grid-area: 1/1/2/2;
       }
+      .specs p{
+            margin:0;
+            margin-left: 80px;
+            margin-top: 10px;
+            width: 368px;
+      }
       /*----------testimonials--------------*/
       .testimonialGrid{
-            margin: auto;
-            width:fit-content;
-            grid-template-columns: 200px 200px 200px 200px;
+            height: 397.2px;
       }
       .gridItem{
             padding: 24px;
             margin: 0;
-            width: 100%;
+            margin-right: 20px;
+            width: unset;
+            height: 397.2px;
       }
+
       .gridItem p{
-            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            width: unset;
+            height: 397.2px;
       }
       /*----------Footer--------------*/
       .go{
@@ -625,11 +638,19 @@ form input{
       .figures{
             padding-top: 0;
       }
-      
+      .nav{
+            text-align: left;
+      }
+      footer li{
+            text-align: left;
+      }
 }     
 /*-------------------------------------------------1200px--------------------------------------------------------*/
 
 @media (min-width: 1200px) {
+      body{
+            background-position: bottom 113% right -40%, bottom 620px right 690px;
+      }
        /*----------header--------------*/
        header{
             display: flex;
@@ -718,7 +739,6 @@ form input{
       }
       .footer{
             grid-template-columns: 262.5px 262.5px 262.5px 262.5px;
-            padding: 0;
             width: fit-content;
       }
 }
