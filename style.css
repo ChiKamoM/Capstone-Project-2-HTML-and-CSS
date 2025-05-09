@@ -242,7 +242,7 @@ h2{
       margin: 40px 0;
 }
 
-footer p{
+footer li{
       text-align: center;
       color: hsl(0, 0%, 98%);
 }
@@ -561,7 +561,7 @@ form input{
 
 @media (min-width:992px) {
       body{
-            background-position: bottom 110% right -90%, bottom 870px right 30px;
+            background-position: bottom 110% right -170%, bottom 870px right 30px;
       }
       /*----------header--------------*/
       header{
