@@ -199,6 +199,7 @@ h2{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       
 }
 .last{
@@ -211,7 +212,6 @@ h2{
 .useManage h3{
       color: white;
       text-align: center;
-      min-width: 100%;
       height: fit-content;
       font-size: 32px;
       font-weight: 700;
@@ -220,10 +220,17 @@ h2{
 .btnWhite{
       background-color: white;
       color:hsl(12, 88%, 59%);
-      margin: auto;
+      border: none;
+      border-radius: 20px;
+      padding: 12.8px 32px;
+      max-width: max-content;
+      max-height: min-content;
+      font-size: 13.3px;
+      font-weight: 700;
 }
 .btnWhite:hover{
       background-color: hsl(12, 100%, 96%);
+      cursor: pointer;
 }
 /*----------Footer--------------*/
  footer{
@@ -499,16 +506,12 @@ form input{
             font-weight: 700;
             margin:0 0 0 0;
       }
-      br{
-            margin-right: -20;
-            padding: 0;
-      }
       .useManage{
             display:flex;
             flex-direction: row;
+            width: 720px;
             justify-content: space-between;
-            margin:0 ;
-            margin-right: 200px;
+            margin: auto;
       }
       .btnWhite{
             background-color: white;
@@ -564,7 +567,7 @@ form input{
 
 @media (min-width:992px) {
       body{
-            background-position: bottom 110% right -165%, bottom 820px right 530px;
+            background-position: bottom 110% right -165%, bottom 700px right 570px;
       }
       /*----------header--------------*/
       header{
@@ -625,6 +628,14 @@ form input{
             width: unset;
             height: 397.2px;
       }
+/*----------Use manage--------------*/
+      .useManage{
+            display:flex;
+            flex-direction: row;
+            width: 960px;
+            justify-content: space-between;
+            margin: auto;
+      }
       /*----------Footer--------------*/
       .go{
             width:fit-content;
@@ -649,7 +660,7 @@ form input{
 
 @media (min-width: 1200px) {
       body{
-            background-position: bottom 113% right -40%, bottom 620px right 690px;
+            background-position: bottom 113% right -40%, bottom 37% left -80%;
       }
        /*----------header--------------*/
        header{
